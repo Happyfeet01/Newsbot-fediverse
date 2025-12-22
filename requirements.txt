@@ -1,0 +1,7 @@
+beautifulsoup4
+requests
+requests-cache
+python-dateutil
+feedparser
+PyYAML
+mastodon.py

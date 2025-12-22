@@ -1,0 +1,56 @@
+- id: spuere-fulda
+  name: "spuere-fulda.de"
+  base_url: "https://spuere-fulda.de/events/"
+  type: html
+- id: meinestadt-fulda
+  name: "Meinestadt Fulda"
+  base_url: "https://veranstaltungen.meinestadt.de/fulda"
+  type: html
+- id: fulda-stadt
+  name: "Stadt Fulda"
+  base_url: "https://www.fulda.de/stadt-politik/veranstaltungskalender"
+  type: html
+- id: huenfeld
+  name: "Hünfeld"
+  base_url: "https://www.huenfeld.de/de/huenfeld-meine-stadt/huenfeld-erleben/veranstaltungskalender/"
+  type: html
+- id: kuenzell
+  name: "Künzell"
+  base_url: "https://www.kuenzell.de/aktuelles/veranstaltungen/"
+  type: html
+- id: petersberg
+  name: "Gemeinde Petersberg"
+  base_url: "https://www.gemeinde-petersberg.de/de/veranstaltungen.html"
+  type: html
+- id: gersfeld
+  name: "Gersfeld"
+  base_url: "https://www.gersfeld.de/terminkalender-tourismus.html?utm_source=perplexity#/veranstaltungen"
+  type: html
+- id: tourismus-fulda
+  name: "Tourismus Fulda"
+  base_url: "https://www.tourismus-fulda.de/entdecken/kultur-events/veranstaltungen"
+  type: html
+- id: bistum-fulda
+  name: "Bistum Fulda RSS"
+  base_url: "https://www.bistum-fulda.de/bistum_fulda/service/rss_feed/rss_start.php"
+  type: rss
+- id: flieden
+  name: "Flieden"
+  base_url: "https://www.flieden.de/kultur-freizeit/veranstaltungen/veranstaltungskalender/"
+  type: html
+- id: neuhof
+  name: "Neuhof Fulda"
+  base_url: "https://www.neuhof-fulda.de/"
+  type: html
+- id: kalbach
+  name: "Kalbach"
+  base_url: "https://veranstaltungen.kalbach.de/"
+  type: html
+- id: lauterbach
+  name: "Lauterbach Hessen"
+  base_url: "https://www.lauterbach-hessen.de/unsere-stadt/veranstaltungen/veranstaltungskalender.html"
+  type: html
+- id: bad-salzschlirf
+  name: "Bad Salzschlirf"
+  base_url: "https://www.bad-salzschlirf.de/veranstaltungen/"
+  type: html
