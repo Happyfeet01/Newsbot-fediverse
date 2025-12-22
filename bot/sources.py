@@ -78,7 +78,10 @@ class RssSourceAdapter(SourceAdapter):
         feed = feedparser.parse(self.config.base_url)
         events = []
         for entry in feed.entries:
-            entry_date = self._parse_entry_date(entry, target_date)
+            entry_date = self._parse_entry_date(entry)
+            if entry_date is None:
+                logger.debug("Skipping RSS entry without parsable date for %s", self.config.id)
+                continue
             if entry_date != target_date:
                 continue
             title = getattr(entry, "title", "").strip()
@@ -93,14 +96,14 @@ class RssSourceAdapter(SourceAdapter):
             )
         return events
 
-    def _parse_entry_date(self, entry: Any, default: date) -> date:
+    def _parse_entry_date(self, entry: Any) -> Optional[date]:
         if getattr(entry, "published", None):
             try:
                 dt = parser.parse(entry.published)
                 return dt.astimezone(BERLIN_TZ).date()
             except Exception:
                 logger.debug("Failed to parse published date", exc_info=True)
-        return default
+        return None
 
 
 class HtmlSourceAdapter(SourceAdapter):
